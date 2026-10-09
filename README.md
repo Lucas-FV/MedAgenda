@@ -26,5 +26,4 @@ Java 25 · Spring Boot · Spring Modulith · PostgreSQL · React · TypeScript �
 
 ## Documentação
 
-- [Documento base do projeto](docs/documento-base.md)
 - [Decisões de arquitetura (ADRs)](docs/adr/)
