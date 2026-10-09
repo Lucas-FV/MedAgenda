@@ -26,4 +26,5 @@ Java 25 · Spring Boot · Spring Modulith · PostgreSQL · React · TypeScript �
 
 ## Documentação
 
+- [Requisitos funcionais e não funcionais](docs/requisitos.md)
 - [Decisões de arquitetura (ADRs)](docs/adr/)
