@@ -31,4 +31,15 @@ tem um ID usado em testes e commits para rastreabilidade (ex.: `RF07`).
 
 ## Requisitos não funcionais
 
-Em breve...
+| ID | Atributo | Meta | Status |
+| --- | --- | --- | :---: |
+| RNF01 | Segurança | Nenhum alerta High no OWASP ZAP e nenhuma dependência com CVE crítica no merge para main | ⬜ |
+| RNF02 | Segurança | Senhas com Argon2 ou BCrypt; dados clínicos criptografados em repouso | ⬜ |
+| RNF03 | Segurança | Todo tráfego em HTTPS, com HSTS e CSP configurados | ⬜ |
+| RNF04 | Privacidade | Logs de aplicação sem dados pessoais (mascaramento de CPF, e-mail, telefone) | ⬜ |
+| RNF05 | Desempenho | p95 abaixo de 300 ms nas rotas de agenda com 50 usuários simultâneos (k6) | ⬜ |
+| RNF06 | Disponibilidade | Health checks e reinício automático no ambiente de deploy | ⬜ |
+| RNF07 | Manutenibilidade | Cobertura de linhas mínima de 80% no domínio; regras de camada verificadas por ArchUnit | ⬜ |
+| RNF08 | Observabilidade | Logs estruturados em JSON com ID de correlação por requisição | ⬜ |
+| RNF09 | Usabilidade | Interface responsiva e navegável por teclado (WCAG 2.1 AA como referência) | ⬜ |
+| RNF10 | Portabilidade | Projeto inteiro sobe com um único `docker compose up` | ⬜ |
