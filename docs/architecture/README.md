@@ -22,8 +22,7 @@ flowchart TB
     recepcao -->|"Gerencia agenda e pacientes<br/>[HTTPS]"| medagenda
     profissional -->|"Consulta agenda, registra evolução<br/>[HTTPS]"| medagenda
     admin -->|"Gerencia equipe, filtra auditoria<br/>[HTTPS]"| medagenda
-    medagenda -->|"Envia e-mails<br/>[SMTP]"| email
-    email -->|"Entrega e-mails"| paciente
+    medagenda -->|"Envia confirmações e<br/>lembretes ao paciente<br/>[SMTP]"| email
 
     classDef pessoa fill:#08427b,stroke:#052e56,color:#fff
     classDef sistema fill:#1168bd,stroke:#0b4884,color:#fff
@@ -38,7 +37,7 @@ flowchart TB
 As partes que rodam separadamente.
 
 ```mermaid
-flowchart TB
+flowchart LR
     usuarios["Usuários<br/>Paciente, recepção,<br/>profissional, administrador"]
 
     subgraph medagenda["MedAgenda"]
